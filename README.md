@@ -1,5 +1,5 @@
 # aminos_frequency
-> ### Count the frequency of amino acids in a peptide
+> ### Count the frequency of amino acids in peptide
 
 
 ![](./GUI.png)
