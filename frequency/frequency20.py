@@ -6,8 +6,10 @@ Created on Mon Jul  8  2019
 @author: bigbug
 """
 import sys
+import os
+os.chdir('D:/VB/scripts/Feature_extraction/frequency/')
 
-with open('D:\\VB\\scripts\\Feature_extraction\\frequency\\aaa.txt', 'r') as f:
+with open(str(sys.argv[1]), 'r') as f:
     peptides = f.readlines()
     
 aminos = 'A C D E F G H I K L M N P Q R S T V W Y'
@@ -15,8 +17,8 @@ amino = aminos.split(' ')
 amino_count = dict()
 amino_frequecy = {}
 
-ipath = 'D:/VB/scripts/Feature_extraction/frequency/sequence_features20raw.txt'
-jpath = 'D:/VB/scripts/Feature_extraction/frequency/sequence_features20.txt'
+ipath = 'sequence_features20raw.txt'
+jpath = 'sequence_features20.txt'
 
 
 with open(ipath, 'w+') as f:    

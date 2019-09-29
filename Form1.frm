@@ -235,11 +235,11 @@ Private Sub Option1_Click(Index As Integer)
 MsgBox Option1(Index).Caption
   Select Case Index
     Case 1
-      code = "cmd /c python3 D:\VB\scripts\Feature_extraction\frequency\frequency20.py " & CommonDialog1.FileName
-      outFile = "D:\VB\scripts\Feature_extraction\frequency\sequence_features20.txt"
+      code = "cmd /c python3 " & App.Path & "\frequency\frequency20.py " & CommonDialog1.FileName
+      outFile = App.Path & "\frequency\sequence_features20.txt"
     Case 2
-      code = "cmd /c python3 D:\VB\scripts\Feature_extraction\frequency\frequency400.py " & CommonDialog1.FileName
-      outFile = "D:\VB\scripts\Feature_extraction\frequency\sequence_features400.txt"
+      code = "cmd /c python3 " & App.Path & "\frequency\frequency400.py " & CommonDialog1.FileName
+      outFile = App.Path & "\frequency\sequence_features400.txt"
   End Select
   
 End Sub

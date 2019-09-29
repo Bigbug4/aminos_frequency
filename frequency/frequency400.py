@@ -6,6 +6,8 @@ Created on Mon Jul  8  2019
 @author: bigbug
 """
 import sys
+import os
+os.chdir('D:/VB/scripts/Feature_extraction/frequency/')
 
 with open(str(sys.argv[1]), 'r') as f:
     peptides = f.readlines()
@@ -19,8 +21,8 @@ for i in amino:
     for j in amino:
         amino_count[i+j] = 0
 
-ipath = 'D:/VB/scripts/Feature_extraction/frequency/sequence_features400raw.txt'
-jpath = 'D:/VB/scripts/Feature_extraction/frequency/sequence_features400.txt'
+ipath = 'sequence_features400raw.txt'
+jpath = 'sequence_features400.txt'
         
 with open(ipath, 'w+') as f:    
     for a in amino_count.keys():
